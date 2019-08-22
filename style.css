@@ -27,6 +27,7 @@ body {
     display: grid;
     grid-template-columns: 5% 1fr 5%;
     min-height: 100vh;
+    animation: 1s ease-out 0s 1 fadeIn;
 }
 
 .profile {
@@ -53,6 +54,7 @@ body {
 }
 
 .github-button-svg {
+    animation: 1.2s ease-out 0s 1 slideLeft;
     transition: 0.2s;
 }
 
@@ -112,5 +114,23 @@ body {
     .profile {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
