@@ -73,3 +73,44 @@ body {
 .github-button-svg:active {
     transform: translateY(4px) scale(1.01);
 }
+
+@media (max-width: 1168px) {
+    .details h1 {
+        font-size: 64px;
+        font-family: PopRegular;
+    }
+    
+    .details h2 {
+        font-size: 36px;
+        padding: 20px 0px 40px 0px;
+    }
+}
+
+@media (max-width: 982px) {
+    .details h1 {
+        font-size: 48px;
+        font-family: PopRegular;
+    }
+    
+    .details h2 {
+        font-size: 36px;
+        padding: 20px 0px 40px 0px;
+    }
+}
+
+@media (max-width: 832px) {
+    .details h1 {
+        font-size: 36px;
+        font-family: PopRegular;
+    }
+    
+    .details h2 {
+        font-size: 24px;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
